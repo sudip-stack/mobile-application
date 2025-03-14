@@ -1,1 +1,111 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🍽️ Mixed Pagoda </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#specials">Specials</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <label for="theme">Choose Theme:</label>
+        <select id="theme" onchange="changeTheme()">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-container">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <!-- Nepali Foods -->
+            <div class="menu-item" onmouseover="highlightItem(this)" onmouseout="removeHighlight(this)">
+                <img src="https://whatthenepal.com/wp-content/uploads/2024/03/Jimbuthakali-1024x683-1.jpg" alt="Dal Bhat">
+                <h3>Dal Bhat</h3>
+                <p>Traditional Nepali rice and lentil soup meal.</p>
+                <span>$7.99</span>
+            </div>
+            <div class="menu-item" onmouseover="highlightItem(this)" onmouseout="removeHighlight(this)">
+                <img src="https://t3.ftcdn.net/jpg/06/49/25/26/360_F_649252668_AcwaAGxraSFmNbr5C20hDpTwz1qoi7RF.jpg" alt="Momo">
+                <h3>Momo</h3>
+                <p>Steamed dumplings filled with minced meat or vegetables.</p>
+                <span>$5.99</span>
+            </div>
+            <div class="menu-item" onmouseover="highlightItem(this)" onmouseout="removeHighlight(this)">
+                <img src="https://images.slurrp.com/prod/articles/a48pgaek60j.webp" alt="Sel Roti">
+                <h3>Sel Roti</h3>
+                <p>Sweet rice flour doughnut, crispy on the outside.</p>
+                <span>$3.99</span>
+            </div>
+            <div class="menu-item" onmouseover="highlightItem(this)" onmouseout="removeHighlight(this)">
+                <img src="https://ecs.com.np/fckimage/article/images/2017/2/cs11.jpg" alt="Yomari">
+                <h3>Yomari</h3>
+                <p>Steamed rice flour dumplings filled with sweet molasses.</p>
+                <span>$6.99</span>
+            </div>
+            <div class="menu-item" onmouseover="highlightItem(this)" onmouseout="removeHighlight(this)">
+                <img src="https://kimchiramen.com.np/storage/products/jWYmuPSVAlGoVuBwXKHx3yRoIHq5GjpJGv35jcTz.jpg" alt="Chatamari">
+                <h3>Chatamari</h3>
+                <p>Rice flour crepe topped with eggs and meat.</p>
+                <span>$8.49</span>
+            </div>
+
+            <!-- Other Foods -->
+            <div class="menu-item" onmouseover="highlightItem(this)" onmouseout="removeHighlight(this)">
+                <img src="https://img.freepik.com/premium-photo/burger-fries_1156651-705.jpg" alt="Burger">
+                <h3>Classic Burger</h3>
+                <p>Juicy beef patty with fresh veggies and cheese.</p>
+                <span>$8.99</span>
+            </div>
+            <div class="menu-item" onmouseover="highlightItem(this)" onmouseout="removeHighlight(this)">
+                <img src="https://t3.ftcdn.net/jpg/00/27/57/96/360_F_27579652_tM7V4fZBBw8RLmZo0Bi8WhtO2EosTRFD.jpg" alt="Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Classic Italian pizza with fresh basil & mozzarella.</p>
+                <span>$12.99</span>
+            </div>
+            <div class="menu-item" onmouseover="highlightItem(this)" onmouseout="removeHighlight(this)">
+                <img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg" alt="Pasta">
+                <h3>Spaghetti Bolognese</h3>
+                <p>Rich tomato sauce with minced beef and parmesan.</p>
+                <span>$10.99</span>
+            </div>
+            <div class="menu-item" onmouseover="highlightItem(this)" onmouseout="removeHighlight(this)">
+                <img src="https://cdn.pixabay.com/photo/2020/04/04/15/07/sushi-5002639_1280.jpg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Fresh salmon and avocado rolled in seaweed.</p>
+                <span>$14.99</span>
+            </div>
+            <div class="menu-item" onmouseover="highlightItem(this)" onmouseout="removeHighlight(this)">
+                <img src="https://t4.ftcdn.net/jpg/09/54/03/97/360_F_954039733_ebYmFEJVYxq0hwyeJlhgj5Tv4n7imIIr.jpg" alt="Grilled Chicken">
+                <h3>Grilled Chicken</h3>
+                <p>Marinated chicken grilled to perfection.</p>
+                <span>$11.49</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 My Restaurant. All Rights Reserved.</p>
+        <p>Owner: Sudip Pathak | Contact: 9823240596 | Location: Kathmandu, Nepal</p>
+    </footer>
+
+</body>
+</html>
